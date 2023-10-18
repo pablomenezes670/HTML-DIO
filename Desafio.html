@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    
+    <h1 id="inicio">Desafio sobre assuntos abordados em HTML</h1>
+    
+    <hr/>
+    <h2><u>Indice</u></h2>
+    <ul>
+        <li><a href="#estrutura-basica">Estrutura básica de uma página HTML</a></li>
+        <li><a href="#tags-html">Como funcionam as tags HTML</a></li>
+        <li><a href="#tags-html-atributos">Tags HTML e seus atributos</a></li>
+        <li><a href="#tags-formatacao">Tags para formatação e decoração de textos</a></li>
+        <li><a href="#criando-listas">Criando listas</a></li>
+        <li><a href="#links-html">Trabalhando com links</a></li>
+        <li><a href="#fontes-referencias">Fontes e referências</a></li>
+    </ul>
+
+    
+
+    <h2 id="estrutura-basica"><u>Estrutura básica de uma página HTML</u></h2>
+
+    <p>A página inicial do site é, por uma convenção, chamada de <i><u>index.html</u></i>. Por padrão, diversos sites espalhados pela internet estarão utilizando essa nomenclatura para sua página principal.</p>
+
+    <p>Um site é formado, de basicamente, por três <i>tags principais</i>:</p>
+
+    <ol>
+        <li><strong>html</strong>: marca aquele pedaço de texto como <u><i>HTML</i></u></li>
+        <li><strong>head</strong>: delimita a "cabeça" do site, o conteúdo que não aparece no corpo da página</li>
+        <li><strong>body</strong>: define aquele pedaço como o corpo da página, que conterá títulos, textos, fotos e mais</li>
+    </ol>
+
+    <p>Essas três tags HTML iniciais definem o básico do corpo de uma página HTML, dividindo a parte das configurações da página e a parte que o usuário vê (o corpo da página).</p>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="tags-html"><u>Como funcionam as tags HTML</u></h2>
+
+    <p>A página é desenvolvida como se fosse um quebra cabeças, cada pedaço tem um lugar a ser encaixado. E se todos os pedaços forem encaixadas da forma correta, o quebra cabeças estará completo e perfeito.</p>
+    <p>As tags HTML podem ser abertas e fechadas, delimitando seu conteúdo entre a abertura e o fechamento. Sendo assim, ao escrever, por exemplo, um parágrafo, o texto estará posicionado no meio dos delimitadores. Uma tag que possui abertura e fechamento é geralmente escrita da seguinte forma: <mark>< tag > conteúdo < /tag ></mark></p>
+    
+    <strong>Exemplos de Tags</strong>
+    <ol>
+        <li><strong>< p > Conteúdo < /p ></strong> define um parágrafo;</li>
+        <li><strong>< i > Conteúdo < /i ></strong> deixa o conteúdo em itálico;</li>
+        <li><strong>< strong > Conteúdo < /strong ></strong> aplica efeito de negrito.</li>
+    </ol>
+
+    <p>A maioria das tags são abertas < tag > e fechadas < /tag >, mantendo seu conteúdo entre essa abertura e fechamento. Entretando, há tags que não possuem esse tipo de fechamento. Tags como < img > e < input > já funcionam como abertura e fechamento de si próprias.</p>
+
+    <strong>Exemplos de Tags sem fechamento</strong>
+    <ol>
+        <li><strong>< img ></strong> cria uma imagem na tela;</li>
+        <li><strong>< input ></strong> cria um campo para inserir algum tipo de informação;</li>
+        <li><strong>< hr ></strong> cria uma divisão, uma linha na tela.</li>
+    </ol>
+
+    <small><a href="#inicio">[Voltar]</a></small>
+
+    <h2 id="tags-html-atributos"><u>Tags HTML e seus atributos</u></h2>
+
+    <p>Tags HTML podem possuir <strong>atributos</strong>, que modificam o seu comportamento, determinam regras e delimitadores, podendo ser aplicadas em diversas situações. Um exemplo seria definir um campo de entrada de informações para que ele aceitasse apenas números.</p>
+    
+    <p>Um atributo pode aceitar um valor, por exemplo, para definir que o <i>tipo</i> é <i>numérico</i>, precisamos passar esse valor ao atributo. Exemplo: <mark>< tag atributo="valor"> conteúdo < /tag ></mark>.</p>
+
+    <p>Existem desde atributos genéricos, que são utilizados em praticamente todas as tags (como <i>id</i> e <i>class</i>), até atributos específicos de determinadas tags (como <i>type</i>).</p>
+
+    <strong>Exemplos de Tags com Atributos</strong>
+    <ol>
+        <li><strong>< img src="link" ></strong> o atributo <u>src</u> define o link da imagem;</li>
+        <li><strong>< input type="text" ></strong> o atributo <u>type</u> define o tipo do campo.</li>
+    </ol>
+
+    <small><a href="#inicio">[Voltar]</a></small>
+
+    <h2 id="tags-formatacao"><u>Tags para formatação e decoração de textos</u></h2>
+
+    <p>O HTML possui uma gama enorme de tags para estilizar o conteúdo na tela, podendo até mesmo criar diversas combinações para deixar tudo ao estilo do fregues. Entre elas, existem:</p>
+
+    <ol>
+        <li>
+            <p>Efeito de rabisco com <strong>< del >< /del ></strong>: Palavra <del>rabiscada</del></p>
+        </li>
+        <li>
+            <p>Efeito de itálico com <strong>< i >< /i ></strong>: Palavra em <i>itálico</i></p>
+        </li>
+        <li>
+            <p>Efeito de marcação com <strong>< mark >< /mark ></strong>: Palavra <mark>marcada</mark></p>
+        </li>
+    </ol>
+
+    <h2 id="criando-listas"><u>Criando listas</u></h2>
+
+    <p>Listas são formadas com uma tag mãe, definindo o tipo da lista, e os seus filhos, que seriam os itens dessa lista. As listas podem ser ordenadas <mark>< ol >< /ol ></mark> ou não ordenadas <mark>< ul >< /ul ></mark>. Haverão itens dentro dessas listas, determinadas pela tag <mark>< li >< /li ></mark>.</p>
+
+    <h3>Lista ordenada</h3>
+
+    Listas <u>ordenadas</u> são construídas a partir da tag <mark>< ol >< /ol ></mark>, e dentro dessa tag, os itens com a tag <mark>< li >< /li ></mark>.
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h3>Lista não ordenada</h3>
+
+    Listas <u>não ordenadas</u> são construídas a partir da tag <mark>< ul >< /ul ></mark>, e dentro dessa tag, os itens com a tag <mark>< li >< /li ></mark>.
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <small><a href="#inicio">[Voltar]</a></small>
+    
+    <h2 id="links-html"><u>Trabalhando com links</u></h2>
+
+    <p>Um link pode levar o usuário para uma outra página, ou outro site, e é definido pela tag <mark>< a >< /a ></mark>. Para que funcione corretamente, o atributo `href` precisa estar inserido com o link de destino. Exemplo: <mark>< a href="link" >Clique aqui< /a ></mark></p>
+
+    <h3>Abrindo páginas em outras abas</h3>
+
+    <p>Por padrão, o site abre na mesma aba, ou seja, muda a página atual, consequentemente saíndo do seu site. É possível mudar esse comportamento, por exemplo, ao clicar no link, abrir uma nova aba, preservando a aba original. Para isso, existe o atributo <i>target</i> que pode receber o valor <mark>_blank</mark>.</p>
+
+    <p>Resumindo, ao clicar no link, uma nova aba será aberta direcionando até a página definida pelo <mark>href</mark>. Exemplo: <mark>< a href="link" target="_blank" >Clique aqui< /a ></mark></p>
+
+    <h3>Ancoragem</h3>
+
+    <p>Além de navegar para outras páginas e sites, é possível utilizar a tag <mark>< a >< /a ></mark> para navegar entre diferentes pedaços de conteúdo dentro da própria página, cria-se uma seção de links de navegação.</p>
+
+    <p>Para a definição das seções, é utilizado o símbolo <mark>#</mark> seguido do <mark>id</mark> da tag. A tag alvo <i>precisa</i> ter um id, pois esse mesmo id será utilizado para identificação na ancoragem.</p>
+    <small><a href="#inicio">[Voltar]</a></small>
+
+    <h2 id="fontes-referencias"><u>Fontes e referências</u></h2>
+
+    <ol>
+        <li><a href="https://www.w3schools.com/htmL/html_id.asp" target="_blank">Atributo ID</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Z23J9ASGrgc" target="_blank">Seu primeiro Site HTML</a></li>
+        <li><a href="https://pt.semrush.com/blog/tags-html/" target="_blank">Todas as tags HTML</a></li>
+        <li><a href="https://www.w3schools.com/tags/tag_font.asp" target="_blank">Tag font não suportada</a></li>
+    </ol>
+    <small><a href="#inicio">[Voltar]</a></small>
+</body>
+</html>
